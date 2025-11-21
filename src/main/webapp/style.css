@@ -1,0 +1,82 @@
+@charset "UTF-8";
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input[type=submit], input[type=reset] {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #0056b3;
+}
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    padding: 15px;
+    margin: 15px;
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+}
+.product-card h4 {
+    margin: 0 0 10px 0;
+}
+.product-card p {
+    font-size: 14px;
+    color: #555;
+}
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}

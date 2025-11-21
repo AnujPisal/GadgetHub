@@ -1,0 +1,138 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background gradient for freshness */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0077b6;
+}
+
+/* Form container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    margin-top: 80px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* Heading */
+.form-container h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Input labels */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Input fields */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0077b6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.3);
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background: #0077b6;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="reset"] {
+    background: #6c757d;
+}
+
+input[type="submit"]:hover {
+    background: #005f87;
+    transform: scale(1.05);
+}
+
+input[type="reset"]:hover {
+    background: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Error message */
+.error {
+    color: #e63946;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.register-link {
+    margin-top: 2.5rem; /* more flexible spacing */
+    color: #555;
+    font-size: 14px;
+}
+

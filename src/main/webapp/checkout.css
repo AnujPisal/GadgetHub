@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;  /* left, center, right layout */
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Button styles for all nav links */
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #0077b6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+
+/* Hover effect */
+nav a:hover {
+    background-color: #005f87;
+    transform: scale(1.05);
+}
+
+/* Red logout button */
+nav a.logout-btn {
+    background-color: #dc3545;
+}
+
+nav a.logout-btn:hover {
+    background-color: #b02a37;
+}
+
+/* Optional: center the middle buttons neatly */
+.nav-center {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+
+/* Checkout container */
+.checkout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease;
+}
+
+/* Heading */
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+}
+
+/* Table styling */
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.checkout-table th {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.checkout-table td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.total-row td {
+    background: #eaf6f6;
+    font-weight: 600;
+}
+
+/* Empty cart message */
+.empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-top: 50px;
+}
+
+.empty-cart a {
+    color: #0077b6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.empty-cart a:hover {
+    text-decoration: underline;
+}
+
+/* Thank you message */
+.thankyou-msg {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn-center {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #005f87;
+    transform: scale(1.05);
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
